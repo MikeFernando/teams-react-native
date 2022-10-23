@@ -1,4 +1,3 @@
-import { ActivityIndicator } from "react-native";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -8,7 +7,6 @@ export const Container = styled.View`
 
   background-color: ${({ theme }) => theme.COLORS.GRAY_600};
 `
-
 export const LoadingIndicator = styled.ActivityIndicator.attrs(({ theme }) => ({
   color: theme.COLORS.RED_DARK
 }))``
