@@ -1,4 +1,4 @@
-import { Container, Subtitle, Title } from "./styles";
+import * as S from "./styles";
 
 interface IProps {
   title: string;
@@ -7,9 +7,9 @@ interface IProps {
 
 export function Highlight({ title, subtitle }: IProps){
   return (
-    <Container>
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
-    </Container>
+    <S.Container>
+      <S.Title>{title}</S.Title>
+      <S.Subtitle>{subtitle}</S.Subtitle>
+    </S.Container>
   );
 }
