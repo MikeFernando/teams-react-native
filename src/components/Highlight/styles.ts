@@ -11,6 +11,7 @@ export const Title = styled.Text`
     font-family: ${theme.FONT_FAMILY.BOLD};
     font-size: ${theme.FONT_SIZE.LG}px;
   `}
+  margin-bottom: 5px;
 `
 export const Subtitle = styled.Text`
   ${({ theme }) => css`
@@ -18,5 +19,5 @@ export const Subtitle = styled.Text`
     font-size: ${theme.FONT_SIZE.MD}px;
     font-family: ${theme.FONT_FAMILY.REGULAR};
   `}
-  
+  margin-bottom: 20px;
 `
