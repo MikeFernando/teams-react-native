@@ -9,8 +9,10 @@ export const Container = styled.View`
   align-items: center;
 `
 export const Logo = styled.Image`
-  width: 46px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin-bottom: 10px;
 `
 export const BackButton = styled.TouchableOpacity`
   flex: 1;

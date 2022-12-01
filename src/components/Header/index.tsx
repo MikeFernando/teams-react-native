@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native'
 
-import LogoImg from '@assets/logo.png'
+import LogoImg from '@assets/pxt.jpg'
 
 import * as S from "./styles";
 

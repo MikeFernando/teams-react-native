@@ -5,7 +5,7 @@ import * as T from './types'
 
 export const Container = styled(TouchableOpacity)<T.FilterStyleProps>`
  ${({ theme, isActive }) => isActive && css`
-    border: 1px solid ${theme.COLORS.GREEN_700};
+    border: 1px solid ${theme.COLORS.WHITE};
   `}
 
   margin-right: 12px;

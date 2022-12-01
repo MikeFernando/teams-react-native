@@ -23,7 +23,7 @@ export const Title = styled.Text`
 `
 export const Icon = styled(UsersThree).attrs(({ theme }) => ({
   size: 32,
-  color: theme.COLORS.GREEN_700,
+  color: theme.COLORS.WHITE,
   weight: 'fill'
 }))`
   margin-right: 20px;

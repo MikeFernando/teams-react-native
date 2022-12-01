@@ -1,6 +1,7 @@
 export default {
   COLORS: {
     WHITE: '#FFFFFF',
+    PURPLE: '#9900D3',
 
     GREEN_700: '#00875F',
     GREEN_500: '#00B37E',
