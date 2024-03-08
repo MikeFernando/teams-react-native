@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled, { css } from "styled-components/native";
 
 export const Container = styled.View`
   flex: 1;
@@ -7,6 +7,8 @@ export const Container = styled.View`
 `;
 
 export const TextEmpyt = styled.Text`
-  font-size: ${({ theme }) => theme.FONT_SIZE.SM}px;
-  color: ${({ theme }) => theme.COLORS.GRAY_300};
+  ${({ theme }) => css`
+    color: ${theme.COLORS.GRAY_300};
+    font-size: ${theme.FONT_SIZE.SM}px;
+  `}
 `;

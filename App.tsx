@@ -8,7 +8,7 @@ import {
 
 import theme from "src/theme";
 
-import { Groups } from "@screens/Groups";
+import { NewGroup } from "@screens/NewGroup";
 import { Loading } from "@components/Loading";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar translucent style="light" />
-      {fontLoaded ? <Groups /> : <Loading />}
+      {fontLoaded ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   );
 }
