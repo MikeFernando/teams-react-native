@@ -16,7 +16,7 @@ export const Container = styled(TouchableOpacity)<Props>`
   justify-content: center;
   border-radius: 8px;
   background-color: ${({ theme, variant }) =>
-    variant === "PRIMARY" ? theme.COLORS.GREEN_500 : theme.COLORS.RED};
+    variant === "PRIMARY" ? theme.COLORS.GREEN_500 : theme.COLORS.RED_DARK};
 `;
 
 export const Title = styled.Text`

@@ -8,9 +8,16 @@ import { GroupCard } from "@components/GroupCard";
 import { TitleSubtitle } from "@components/TitleSubtitle.tsx";
 
 import { Container } from "./styles";
+import { useNavigation } from "@react-navigation/native";
 
 export function Groups() {
   const [groups, setGroups] = React.useState<string[]>([]);
+
+  const navigation = useNavigation();
+
+  function handleNewGroup() {
+    navigation.navigate("new");
+  }
 
   return (
     <Container>
@@ -31,7 +38,7 @@ export function Groups() {
         )}
       />
 
-      <Button title="Criar nova turma" />
+      <Button title="Criar nova turma" onPress={handleNewGroup} />
     </Container>
   );
 }
