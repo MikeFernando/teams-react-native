@@ -8,8 +8,8 @@ import {
 
 import theme from "src/theme";
 
-import { NewGroup } from "@screens/NewGroup";
 import { Loading } from "@components/Loading";
+import { Players } from "@screens/Players";
 
 export default function App() {
   const [fontLoaded] = useFonts({
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar translucent style="light" />
-      {fontLoaded ? <NewGroup /> : <Loading />}
+      {fontLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }

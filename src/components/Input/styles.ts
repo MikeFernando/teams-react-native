@@ -8,8 +8,9 @@ export const Container = styled(TextInput).attrs(({ theme }) => ({
   autoCapitalize: "none",
 }))`
   background-color: ${({ theme }) => theme.COLORS.GRAY_700};
-  width: 100%;
+  flex: 1;
   height: 56px;
+  max-height: 56px;
   border-radius: 8px;
   display: flex;
   align-items: center;
