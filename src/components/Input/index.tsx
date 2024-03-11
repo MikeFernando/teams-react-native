@@ -1,12 +1,13 @@
 import React from "react";
-import { TextInputProps } from "react-native";
+import { Text, TextInput, TextInputProps } from "react-native";
 
 import { Container } from "./styles";
 
 type Props = TextInputProps & {
   placeholder?: string;
+  inputRef?: React.RefObject<TextInput>;
 };
 
-export function Input({ placeholder, ...rest }: Props) {
-  return <Container placeholder={placeholder} {...rest} />;
+export function Input({ placeholder, inputRef, ...rest }: Props) {
+  return <Container ref={inputRef} placeholder={placeholder} {...rest} />;
 }
